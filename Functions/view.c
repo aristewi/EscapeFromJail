@@ -67,9 +67,9 @@ int main(int argc, char *argv[])
     struct dirent *dir;
     struct stat *buf = malloc(sizeof(struct stat));
     char room[100] = "Places [access]:\n";
-    char tool[100] = "Tools [pickup]:\n";
-    char object[100] = "Objects [check]:\n";
-    char npc[100] = "People [talk]:\n";
+    //char tool[100] = "Tools [pickup]:\n";
+    //char object[100] = "Objects [check]:\n";
+    //char npc[100] = "People [talk]:\n";
 
     switch (argc)
     {
@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
                     int info = extension(dir->d_name);
                     switch (info)
                     {
-                    case 1:
+                    /*case 1:
                         deletextension(dir->d_name);
                         strcat(tool, "  ");
                         strcat(tool, dir->d_name);
@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
                         strcat(npc, "  ");
                         strcat(npc, dir->d_name);
                         strcat(npc, "\n");
-                        break;
+                        break;*/
                     case 4:
                         break;
                     default:
@@ -126,11 +126,11 @@ int main(int argc, char *argv[])
         }
         write(1, room, strlen(room));
         write(1, "\n", strlen("\n\n"));
-        write(1, tool, strlen(tool));
+        //write(1, tool, strlen(tool));
         write(1, "\n", strlen("\n\n"));
-        write(1, object, strlen(object));
+        //write(1, object, strlen(object));
         write(1, "\n", strlen("\n\n"));
-        write(1, npc, strlen(npc));
+        //write(1, npc, strlen(npc));
         write(1, "\n", strlen("\n\n"));
         closedir(d);
         break;
@@ -222,7 +222,7 @@ int main(int argc, char *argv[])
                                     int info = extension(dir->d_name);
                                     switch (info)
                                     {
-                                    case 1:
+                                    /*case 1:
                                         deletextension(dir->d_name);
                                         strcat(tool, "  ");
                                         strcat(tool, dir->d_name);
@@ -239,7 +239,7 @@ int main(int argc, char *argv[])
                                         strcat(npc, "  ");
                                         strcat(npc, dir->d_name);
                                         strcat(npc, "\n");
-                                        break;
+                                        break;*/
                                     case 4:
                                         break;
                                     default:
@@ -253,11 +253,11 @@ int main(int argc, char *argv[])
                         }
                         write(1, room, strlen(room));
                         write(1, "\n", strlen("\n\n"));
-                        write(1, tool, strlen(tool));
+                        //write(1, tool, strlen(tool));
                         write(1, "\n", strlen("\n\n"));
-                        write(1, object, strlen(object));
+                        //write(1, object, strlen(object));
                         write(1, "\n", strlen("\n\n"));
-                        write(1, npc, strlen(npc));
+                        //write(1, npc, strlen(npc));
                         write(1, "\n", strlen("\n\n"));
                         chdir(home);
                         closedir(d);
@@ -285,7 +285,7 @@ int main(int argc, char *argv[])
                                 int info = extension(dir->d_name);
                                 switch (info)
                                 {
-                                case 1:
+                                /*case 1:
                                     deletextension(dir->d_name);
                                     strcat(tool, "  ");
                                     strcat(tool, dir->d_name);
@@ -301,7 +301,7 @@ int main(int argc, char *argv[])
                                     deletextension(dir->d_name);
                                     strcat(npc, "  ");
                                     strcat(npc, dir->d_name);
-                                    strcat(npc, "\n");
+                                    strcat(npc, "\n");*/
                                     break;
                                 case 4:
                                     break;
@@ -316,11 +316,11 @@ int main(int argc, char *argv[])
                     }
                     write(1, room, strlen(room));
                     write(1, "\n", strlen("\n\n"));
-                    write(1, tool, strlen(tool));
+                    //write(1, tool, strlen(tool));
                     write(1, "\n", strlen("\n\n"));
-                    write(1, object, strlen(object));
+                    //write(1, object, strlen(object));
                     write(1, "\n", strlen("\n\n"));
-                    write(1, npc, strlen(npc));
+                    //write(1, npc, strlen(npc));
                     write(1, "\n", strlen("\n\n"));
                     chdir(home);
                     closedir(d);
@@ -560,7 +560,7 @@ int main(int argc, char *argv[])
                                     int info = extension(dir->d_name);
                                     switch (info)
                                     {
-                                    case 1:
+                                    /*case 1:
                                         deletextension(dir->d_name);
                                         strcat(tool, "  ");
                                         strcat(tool, dir->d_name);
@@ -577,7 +577,7 @@ int main(int argc, char *argv[])
                                         strcat(npc, "  ");
                                         strcat(npc, dir->d_name);
                                         strcat(npc, "\n");
-                                        break;
+                                        break;*/
                                     case 4:
                                         break;
                                     default:
@@ -591,11 +591,11 @@ int main(int argc, char *argv[])
                         }
                         write(1, room, strlen(room));
                         write(1, "\n", strlen("\n\n"));
-                        write(1, tool, strlen(tool));
+                        //write(1, tool, strlen(tool));
                         write(1, "\n", strlen("\n\n"));
-                        write(1, object, strlen(object));
+                        //write(1, object, strlen(object));
                         write(1, "\n", strlen("\n\n"));
-                        write(1, npc, strlen(npc));
+                        //write(1, npc, strlen(npc));
                         write(1, "\n", strlen("\n\n"));
                         chdir(home);
                         closedir(d);
@@ -623,7 +623,7 @@ int main(int argc, char *argv[])
                                 int info = extension(dir->d_name);
                                 switch (info)
                                 {
-                                case 1:
+                                /*case 1:
                                     deletextension(dir->d_name);
                                     strcat(tool, "  ");
                                     strcat(tool, dir->d_name);
@@ -640,7 +640,7 @@ int main(int argc, char *argv[])
                                     strcat(npc, "  ");
                                     strcat(npc, dir->d_name);
                                     strcat(npc, "\n");
-                                    break;
+                                    break;*/
                                 case 4:
                                     break;
                                 default:
@@ -654,11 +654,11 @@ int main(int argc, char *argv[])
                     }
                     write(1, room, strlen(room));
                     write(1, "\n", strlen("\n\n"));
-                    write(1, tool, strlen(tool));
+                    //write(1, tool, strlen(tool));
                     write(1, "\n", strlen("\n\n"));
-                    write(1, object, strlen(object));
+                    //write(1, object, strlen(object));
                     write(1, "\n", strlen("\n\n"));
-                    write(1, npc, strlen(npc));
+                    //write(1, npc, strlen(npc));
                     write(1, "\n", strlen("\n\n"));
                     chdir(home);
                     closedir(d);
